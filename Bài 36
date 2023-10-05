@@ -1,0 +1,18 @@
+Viết chương trình in ra n số nguyên tố đầu tiên (n nhập từ bàn phím).
+
+n = int(input("Nhap n: "))
+k = 2
+count = 0
+
+while count < n:
+    is_prime = True
+    for i in range(2, int(k ** 0.5) + 1):
+        if k % i == 0:
+            is_prime = False
+            break
+    if is_prime:
+        print(k, end = " ")
+        count += 1
+    k += 1
+    
+print()
