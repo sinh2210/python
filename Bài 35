@@ -1,0 +1,22 @@
+Viết chương trình kiểm tra một số nguyên dương n có là số nguyên tố hay
+không. Nếu không thì phải xác định số nguyên tố gần n nhất và bé hơn n.
+
+def is_prime(k):
+    if k == 2:
+        return True
+    if k < 2 or k % 2 == 0:
+        return False
+    for i in range(3, k // 2 + 1, 2):
+        if k % i == 0:
+            return False
+    return True
+
+n = int(input("Nhap n: "))
+if is_prime(n):
+    print(f"{n} la so nguyen to")
+else:
+    print(f"{n} khong la so nguyen to")
+    for i in range(n - 1, 1, -1):
+        if is_prime(i):
+            print(f"So nguyen to be hon gan nhat: {i}")
+            break
