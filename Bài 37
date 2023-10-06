@@ -1,0 +1,22 @@
+Viết chương trình nhập số nguyên dương n. Tìm số nguyên dương m lớn nhất
+sao cho: 1 + 2 + … + m < n.
+
+n = int(input("Nhap n: "))
+while n <= 0:
+    print("Loi: n phai lon hon 0")
+    n = int(input("Nhap n: "))
+    
+s = 0
+m = 1
+while s + m < n:
+    print(m, end="")
+    s += m
+    m += 1
+    if s + m < n:
+        print(" + ", end="")
+        
+if s:
+    print(" = {} < {}".format(s, n))
+    print("m = {}".format(m - 1))
+else:
+    print("khong tim thay")
