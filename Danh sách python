@@ -1,7 +1,35 @@
-Cú pháp
+-Cú pháp
   newlist = [expression for item in iterable if condition == True]
   Giá trị trả về là một danh sách mới, giữ nguyên danh sách cũ.
 VD:
   fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
   newlist = [x for x in fruits if "a" in x]
   print(newlist)
+
+//sắp xếp danh sách:
+-Sắp xếp danh sách theo thứ tự chữ cái:
+  sort() phương thức sẽ sắp xếp danh sách theo thứ tự chữ và số, tăng dần theo mặc định
+    thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+    thislist.sort()
+    print(thislist)
+-Sắp xếp giảm dần:
+  reverse = True
+    thislist = [100, 50, 65, 82, 23]
+    thislist.sort(reverse = True)
+    print(thislist)
+-Tùy chỉnh chức năng sắp xếp:
+  key = function Hàm sẽ trả về một số sẽ được sử dụng để sắp xếp danh sách (số thấp nhất trước)
+    def myfunc(n):
+      return abs(n - 50)
+    thislist = [100, 50, 65, 82, 23]
+    thislist.sort(key = myfunc)
+    print(thislist)
+-Sắp xếp không phân biệt chữ hoa chữ thường:
+    thislist = ["banana", "Orange", "Kiwi", "cherry"]
+    thislist.sort(key = str.lower)
+    print(thislist)
+-Thứ tự ngược lại:
+  reverse() đảo ngược thứ tự sắp xếp hiện tại của các phần tử
+    thislist = ["banana", "Orange", "Kiwi", "cherry"]
+    thislist.reverse()
+    print(thislist)
