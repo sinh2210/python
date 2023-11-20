@@ -1,0 +1,7 @@
+Cú pháp
+  newlist = [expression for item in iterable if condition == True]
+  Giá trị trả về là một danh sách mới, giữ nguyên danh sách cũ.
+VD:
+  fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+  newlist = [x for x in fruits if "a" in x]
+  print(newlist)
