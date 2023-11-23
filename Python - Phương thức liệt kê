@@ -1,0 +1,11 @@
+append() Thêm một phần tử vào cuối danh sách
+clear() Xóa tất cả các phần tử khỏi danh sách
+copy() Trả về bản sao của danh sách
+count() Trả về số phần tử có giá trị được chỉ định
+Extend() Thêm các phần tử của danh sách (hoặc bất kỳ phần tử có thể lặp lại nào) vào cuối danh sách hiện tại
+index() Trả về chỉ mục của phần tử đầu tiên với giá trị được chỉ định
+Insert() Thêm một phần tử vào vị trí đã chỉ định
+pop() Xóa phần tử tại vị trí đã chỉ định
+Remove() Xóa mục có giá trị được chỉ định
+Reverse() Đảo ngược thứ tự của danh sách
+Sort() Sắp xếp danh sách
